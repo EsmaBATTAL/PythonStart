@@ -5,13 +5,14 @@ def filterstring():
     n = int(sys.argv[2])
     assert isinstance(s, str)
     assert isinstance(n, int)
-    
+
     words = s.split()
-    result = ft_filter(lambda word: len(word) > n, words)
+    result = ft_filter(lambda words: len(words) > n, words)
     print(result)
 
 
 def main():
+   
     try:
         filterstring()
     except Exception as e:
