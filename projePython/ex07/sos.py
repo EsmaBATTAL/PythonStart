@@ -48,11 +48,11 @@ def sos(input):
             if char.isalpha() or char.isdigit():
                 for k in ft_dict:
                     if (k == char or k.lower() == char):
-                        count++
+                        count +=1
                         output+=ft_dict[k]
-        if len ==count
+        if len == count:
             print(output)
-        else
+        else:
              raise Exception("deneme")
     except Exception as e:
         print(f"{e}")
